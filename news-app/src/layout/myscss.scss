@@ -1,0 +1,67 @@
+$myColor: red;
+
+$display: flex;
+$flexDirection: column;
+$alignItems: center;
+$backgroundColor: whitesmoke;
+$height: 100%;
+$width: 100%;
+$position: absolute;
+
+h1 {
+  color: $myColor;
+}
+
+.main_category {
+  display: $display;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+
+  width: $width;
+  background-color: $backgroundColor;
+  position: $position;
+}
+
+.main_article {
+  display: $display;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  height: $height;
+  width: $width;
+  background-color: $backgroundColor;
+  position: $position;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.home_page .parent_content {
+  display: $display;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: center;
+  width: $width;
+  background-color: $backgroundColor;
+  position: $position;
+}
+
+.home_page .child_1 {
+  background-color: red;
+  height: 50px;
+  justify-content: left;
+}
+
+.home_page .child_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.home_page .child_2 .child_3 .child_4 {
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+}
